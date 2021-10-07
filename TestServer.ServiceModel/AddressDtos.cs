@@ -12,7 +12,7 @@ namespace TestServer.ServiceModel
     public class GetAddressListResponse
     {
         public List<Address> Addresses { get; set; }
-        public ResponseStatus Status { get; set; }
+        public ResponseStatus ResponseStatus { get; set; }
     }
 
 }

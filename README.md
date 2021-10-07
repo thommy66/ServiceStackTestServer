@@ -23,7 +23,7 @@ In the `AddressService.cs` file comment lines to reproduce the problems:
             return new GetAddressListResponse()
             {
                 Addresses = addresses.Addresses,
-                //Status = new ResponseStatus("500", "This is a fake message for testing!"),
+                ResponseStatus = new ResponseStatus("500", "This is a fake message for testing!"),
             };
         }
 
