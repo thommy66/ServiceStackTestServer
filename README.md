@@ -1,11 +1,12 @@
 # TestServer
 ## Purpose
 This simple test server was built to demonstrate a problem with serializing `Exceptions` and `ResponseStatus` objects when using ServiceStack and the 
-References for Dart/Flutter
+References for Dart/Flutter. The problem was detected in a production project using .NETCore 3.1 and ServiceStack 5.2 on a Fedora 34 Workstation and RHEL docker containers.
 ## Infrastructure
 This server was created with the following settings / infrastructure
 * Mac running the latest version of BigSur.
 * It was built as .NET 5.0 self-hosting Kestrel Console App
+* It is using ServiceStack 5.12.1
 ## What is inside
 This project is very primitive and has only **one** service. This service generates a list of 10 addresses and returns them as a list of objects.
 ## How to produce the errors
